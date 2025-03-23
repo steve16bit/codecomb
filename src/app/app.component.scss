@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+
+  h1 {
+    font-weight: 900;
+    color: var(--color-primary);
+  }
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "main-card progress-card progress-card"
+    "main-card about-card contact-card";
+    gap: 20px;
+
+  #main-card {
+    grid-area: main-card;
+  }
+  #progress-card {
+    grid-area: progress-card;
+  }
+  #about-card {
+    grid-area: about-card;
+  }
+  #contact-card {
+    grid-area: contact-card;
+  }
+}

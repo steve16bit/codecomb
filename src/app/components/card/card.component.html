@@ -1,0 +1,79 @@
+<div class="card-wrapper" [ngStyle]="{'border': isMainCard ? '2px solid var(--color-primary)' : '2px solid var(--color-dark-gray)'}">
+  <div class="card-header">
+    <p [class]="{ 'main-title': isMainCard, title: !isMainCard }">
+      {{ title }}
+    </p>
+    <span class="material-symbols-outlined" style="color: var(--color-primary)">
+      {{ icon }}
+    </span>
+  </div>
+  <p *ngIf="title === 'Rota de sucesso'">{{ content }}</p>
+  <div class="card-content">
+    <div *ngIf="isMainCard">
+      <h1>Transforme a sua marca com os nossos serviços</h1>
+      <p>
+        Ofereça uma experiência única para seus clientes através de nossos sites
+        personalizados.
+      </p>
+    </div>
+    <div *ngIf="!isMainCard">
+      <h1>{{ contentTitle }}</h1>
+      <p *ngIf="title !== 'Rota de sucesso'">{{ content }}</p>
+    </div>
+    <div *ngIf="title === 'Rota de sucesso'" class="progress-content">
+      <span
+        class="material-symbols-outlined"
+        style="color: var(--color-light-gray)"
+        >looks_one</span
+      >
+      <span
+        class="material-symbols-outlined"
+        style="color: var(--color-light-gray)"
+      >
+        arrow_right_alt
+      </span>
+      <span
+        class="material-symbols-outlined"
+        style="color: var(--color-light-gray)"
+        >looks_two</span
+      >
+      <span
+        class="material-symbols-outlined"
+        style="color: var(--color-light-gray)"
+      >
+        arrow_right_alt
+      </span>
+      <span
+        class="material-symbols-outlined"
+        style="color: var(--color-light-gray)"
+        >looks_3</span
+      >
+      <span
+        class="material-symbols-outlined"
+        style="color: var(--color-light-gray)"
+      >
+        arrow_right_alt
+      </span>
+      <span
+        class="material-symbols-outlined"
+        style="color: var(--color-light-gray)"
+        >looks_4</span
+      >
+      <span
+        class="material-symbols-outlined"
+        style="color: var(--color-light-gray)"
+      >
+        arrow_right_alt
+      </span>
+      <span
+        class="material-symbols-outlined"
+        style="color: var(--color-primary)"
+      >
+        trophy
+      </span>
+    </div>
+  </div>
+  <div class="card-action">
+    <button *ngIf="isMainCard">Conhecer</button>
+  </div>
+</div>

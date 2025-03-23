@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+ :root {
+  --color-primary: #EDE500;
+  --color-secondary: #232323;
+  --color-black: #1E1E1E;
+  --color-dark-gray: #303030;
+  --color-light-gray: #C3C3C3;
+ }
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-secondary);
+ }
+
+ a {
+  font-style: normal;
+  text-decoration: underline;
+  color: var(--color-primary);
+  font-weight: 600;
+ }
+
+ button {
+    outline: none;
+    border: none;
+    box-shadow: none;
+ }
