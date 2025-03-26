@@ -1,25 +1,13 @@
-<div class="card-wrapper" [ngStyle]="{'border': isMainCard ? '2px solid var(--color-primary)' : '3px solid var(--color-dark-gray)'}">
+<div class="card-wrapper">
   <div class="card-header">
-    <p [class]="{ 'main-title': isMainCard, title: !isMainCard }">
-      {{ title }}
-    </p>
+    <h1>Rota de sucesso</h1>
     <span class="material-symbols-outlined" style="color: var(--color-primary)">
-      {{ icon }}
+      mountain_flag
     </span>
   </div>
-  <p *ngIf="title === 'Rota de sucesso'">{{ content }}</p>
   <div class="card-content">
-    <div *ngIf="isMainCard">
-      <h1>Transforme a sua marca com os nossos sites</h1>
-      <p>
-        Ofereça uma experiência única para seus clientes através de nossos sites
-        personalizados.
-      </p>
-    </div>
-    <div *ngIf="!isMainCard">
-      <p *ngIf="title !== 'Rota de sucesso'">{{ content }}</p>
-    </div>
-    <div *ngIf="title === 'Rota de sucesso'" class="progress-content">
+    <p>Conheça nosso processo e como levamos a sua marca para o próximo nível.</p>
+    <div class="progress-content">
       <span
         class="material-symbols-outlined"
         style="color: var(--color-light-gray)"

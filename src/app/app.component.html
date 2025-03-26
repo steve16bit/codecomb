@@ -1,37 +1,18 @@
 <nav>
-  <img src="images/logo.svg" width="80px" height="80px" />
+  <img src="images/logo.svg" width="50px" height="50px" />
   <h1>Code Comb</h1>
 </nav>
-<div class="container" style="height: 100%">
-  <div id="main-card" style="height: 100%">
-    <app-card
-      [isMainCard]="true"
-      [title]="'Primeiro passo'"
-      [icon]="'flag'"
-    ></app-card>
+<div class="container">
+  <div id="main-card">
+    <app-card-main></app-card-main>
   </div>
   <div id="progress-card">
-    <app-card
-      [isMainCard]="false"
-      [title]="'Rota de sucesso'"
-      [content]="'Conheça nosso processo e como levamos a sua marca para o próximo nível.'"
-      [icon]="'mountain_flag'"
-    ></app-card>
+    <app-card-success-route></app-card-success-route>
   </div>
   <div id="about-card">
-    <app-card
-      [isMainCard]="false"
-      [title]="'Sobre'"
-      [icon]="'info'"
-      [content]="'Aqui falamos um pouco mais sobre nós e nosso objetivo com a CodeComb.'"
-    ></app-card>
+    <app-card-about></app-card-about>
   </div>
   <div id="contact-card">
-    <app-card
-      [isMainCard]="false"
-      [title]="'Contato'"
-      [icon]="'call'"
-      [content]="'Aqui você encontra todas formas de comunicação da CodeComb.'"
-    ></app-card>
+    <app-card-contact></app-card-contact>
   </div>
 </div>
