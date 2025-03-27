@@ -3,53 +3,53 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  border: 3px solid var(--color-light-gray);
+  border: 2px solid var(--color-dark-gray);
   border-radius: 25px;
   padding: 20px;
   background-color: var(--color-black);
 
   .card-header {
     display: flex;
-    justify-content: space-between;
-    
-    p {
+    justify-content: space-between; 
+    align-items: center;
+
+    .title {
       font-size: 3rem;
+      color: var(--color-primary);
+      font-weight: 900;
     }
 
     span {
       font-size: 4rem;
-      color: var(--color-primary)
+      color: var(--color-primary);
     }
   }
 
   .card-content {
-    h1 {
-      line-height: 5rem;
-      letter-spacing: -0.1rem;
-      margin-bottom: 10px;
-      font-size: 6rem;
-      font-weight: 900;
-    } 
-    
-    div p {
-      font-size: 2rem;
+    p {
+      font-size: 1.6rem;
       font-weight: 200;
+      line-height: 1.8rem;
     }
   }
 
   .card-action {
     display: flex;
     justify-content: flex-end;
-  }
 
-  .title {
-    color: var(--color-primary);
-    font-weight: 200;
-    
-  }
+    button {
+      padding: 0;
+      font-weight: 300;
+      border: none;
+      background-color: transparent;
+      color: var(--color-primary);
+      transition: all 0.4s ease-in-out;
 
-  .title {
-    color: var(--color-primary);
-    font-weight: 900;
+      &:hover {
+        transition: all 0.4s ease-in-out;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
   }
 }

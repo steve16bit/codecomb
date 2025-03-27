@@ -8,6 +8,10 @@ nav {
     font-weight: 900;
     color: var(--color-primary);
   }
+
+ @media (max-width: 375px) {
+  justify-content: center;
+ }
 }
 
 .container {
@@ -16,9 +20,25 @@ nav {
   padding: 100px 300px;
   display: grid;
   grid-template-areas:
-    "main-card progress-card progress-card"
-    "main-card about-card contact-card";
+  "main-card progress-card progress-card"
+  "main-card about-card contact-card";
   gap: 20px;
+
+  @media (max-width: 1366px) {
+    padding: 30px 100px;
+  }
+
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: unset;
+    height: unset;
+    grid-template-areas: unset;
+
+    margin: 10px 20px;
+  }
 
   #main-card {
     grid-area: main-card;

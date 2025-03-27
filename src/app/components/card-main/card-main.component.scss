@@ -10,10 +10,12 @@
 
   .card-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
     
-    p {
-      font-size: 3rem;
+    .main-title {
+      color: var(--color-primary);
+      font-weight: 200;
     }
 
     span {
@@ -29,27 +31,17 @@
       margin-bottom: 10px;
       font-size: 6rem;
       font-weight: 900;
-    } 
+    }
     
     div p {
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: 200;
+      line-height: 1.8rem;
     }
   }
 
   .card-action {
     display: flex;
     justify-content: flex-end;
-  }
-
-  .main-title {
-    color: var(--color-primary);
-    font-weight: 200;
-    
-  }
-
-  .title {
-    color: var(--color-primary);
-    font-weight: 900;
   }
 }
