@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 425px) {
+    gap: 30px;
+  }
+  
   height: 100%;
   border: 2px solid var(--color-primary);
   border-radius: 25px;
@@ -10,9 +15,9 @@
 
   .card-header {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    
+
     .main-title {
       color: var(--color-primary);
       font-weight: 200;
@@ -31,8 +36,13 @@
       margin-bottom: 10px;
       font-size: 6rem;
       font-weight: 900;
+
+      @media (max-width: 425px) {
+        font-size: 5rem;
+        line-height: 4rem;
+      }
     }
-    
+
     div p {
       font-size: 1.6rem;
       font-weight: 200;

@@ -2,15 +2,26 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
+  @media (max-width: 425px) {
+    gap: 30px;
+  }
+  
   height: 100%;
   border: 2px solid var(--color-dark-gray);
   border-radius: 25px;
   padding: 20px;
   background-color: var(--color-black);
 
+  &:checked {
+    flex-grow: 10000;
+    width: 800px;
+    transition: all 0.9s ease-in-out;
+  }
+
   .card-header {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 
     .title {
@@ -35,20 +46,23 @@
 
   .card-action {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
+    gap: 5px;
 
-    button {
-      padding: 0;
-      font-weight: 300;
-      border: none;
-      background-color: transparent;
+    div {
+      display: flex;
+      align-items: center;
       color: var(--color-primary);
-      transition: all 0.4s ease-in-out;
+      gap: 5px;
 
-      &:hover {
-        transition: all 0.4s ease-in-out;
-        font-weight: 600;
-        cursor: pointer;
+      i {
+        font-size: 3rem;
+      }
+      a {
+        font-size: 1.4rem;
+        color: var(--color-light-gray);
+        text-decoration-thickness: 1px;
       }
     }
   }

@@ -9,7 +9,7 @@ nav {
     color: var(--color-primary);
   }
 
- @media (max-width: 375px) {
+ @media (max-width: 425px) {
   justify-content: center;
  }
 }
@@ -28,7 +28,7 @@ nav {
     padding: 30px 100px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 425px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +37,7 @@ nav {
     height: unset;
     grid-template-areas: unset;
 
-    margin: 10px 20px;
+    padding: 10px 20px;
   }
 
   #main-card {
