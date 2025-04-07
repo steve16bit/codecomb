@@ -50,6 +50,7 @@ button {
   font-weight: 900;
   font-size: 1.4rem;
   color: var(--color-dark-gray);
+  cursor: pointer;
   @media (max-width: 1366px) {
     padding: 10px 20px;
   }

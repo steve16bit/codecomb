@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card-contact',
@@ -7,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './card-contact.component.scss'
 })
 export class CardContactComponent {
+  @Output() showFormOnMainCard = new EventEmitter<boolean>();
 
+  constructor() {}
+
+  ngOnInit(): void {
+    
+  }
+
+  showForm() {
+    console.log(`TEST`)
+    this.showFormOnMainCard.emit(true)
+  }
 }

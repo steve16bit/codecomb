@@ -1,20 +1,67 @@
-<div class="card-wrapper">
-  <div class="card-header">
-    <h1 class="main-title">Primeiro passo</h1>
-    <span class="material-symbols-outlined">
-      flag
-    </span>
-  </div>
-  <div class="card-content">
-    <div>
-      <h1>Transforme a sua marca com os nossos sites</h1>
-      <p>
-        Ofereça uma experiência única para seus clientes através de nossos sites
-        personalizados.
-      </p>
+<div class="container">
+  <div class="card-wrapper front" [ngClass]="{'is-flipped': !isFormVisible}">
+    <div class="card-header">
+      <h1 class="main-title">
+        Primeiro passo
+      </h1>
+      <span class="material-symbols-outlined" title="Voltar" (click)="showForm()">
+        flag
+      </span>
+    </div>
+    <div class="card-content">
+      <div>
+        <h1>Transforme a sua marca com os nossos sites</h1>
+        <p>
+          Ofereça uma experiência única para seus clientes através de nossos sites
+          personalizados.
+        </p>
+      </div>
+    </div>
+  
+    <div class="card-action">
+      <button (click)="showForm()">
+        Entre em contato
+      </button>
     </div>
   </div>
-  <div class="card-action">
-    <button>Entre em contato</button>
+  
+  <div class="card-wrapper back" [ngClass]="{'is-flipped': isFormVisible}">
+    <div class="card-header">
+      <h1 class="main-title">Enviar e-mail
+      </h1>
+      <span class="material-symbols-outlined" title="Voltar" style="cursor: pointer;" (click)="showForm()">arrow_back
+      </span>
+    </div>
+    <div class="card-content">
+      <form>
+        <input
+          type="email"
+          placeholder="E-mail"
+          [(ngModel)]="form.email"
+          name="email"
+        />
+        <input
+          type="text"
+          placeholder="Nome"
+          [(ngModel)]="form.name"
+          name="name"
+        />
+        <input
+          type="tel"
+          placeholder="Telefone"
+          [(ngModel)]="form.phone"
+          name="phone"
+        />
+        <textarea
+          placeholder="Sua mensagem"
+          [(ngModel)]="form.message"
+          name="message"
+        ></textarea>
+      </form>
+    </div>
+  
+    <div class="card-action">
+      <button (click)="sendEmail()">Enviar</button>
+    </div>
   </div>
 </div>

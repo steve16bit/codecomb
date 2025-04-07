@@ -11,5 +11,10 @@ import { CardContactComponent } from "./components/card-contact/card-contact.com
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'codecomb';
+  title = 'codecomb'; 
+  isFormVisible: boolean = false;
+
+  showForm() {
+    this.isFormVisible = !this.isFormVisible;
+  }
 }

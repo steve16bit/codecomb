@@ -4,7 +4,7 @@
 </nav>
 <div class="container">
   <div id="main-card">
-    <app-card-main></app-card-main>
+    <app-card-main (showFormOnMainCard)="showForm()" [isFormVisible]="isFormVisible"></app-card-main>
   </div>
   <div id="progress-card">
     <app-card-success-route></app-card-success-route>
@@ -13,6 +13,6 @@
     <app-card-about></app-card-about>
   </div>
   <div id="contact-card">
-    <app-card-contact></app-card-contact>
+    <app-card-contact (showFormOnMainCard)="showForm()"></app-card-contact>
   </div>
 </div>
