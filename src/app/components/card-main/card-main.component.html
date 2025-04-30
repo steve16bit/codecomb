@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="card-wrapper front" [ngClass]="{'is-flipped': !isFormVisible}">
+  <div class="card-wrapper">
     <div class="card-header">
       <h1 class="main-title">
         Primeiro passo
@@ -19,13 +19,13 @@
     </div>
   
     <div class="card-action">
-      <button (click)="showForm()">
+      <!-- <button (click)="showForm()">
         Entre em contato
-      </button>
+      </button> -->
     </div>
   </div>
   
-  <div class="card-wrapper back" [ngClass]="{'is-flipped': isFormVisible}">
+  <!-- <div class="card-wrapper back" [ngClass]="{'is-flipped': isFormVisible}">
     <div class="card-header">
       <h1 class="main-title">Enviar e-mail
       </h1>
@@ -63,5 +63,5 @@
     <div class="card-action">
       <button (click)="sendEmail()">Enviar</button>
     </div>
-  </div>
+  </div> -->
 </div>

@@ -28,8 +28,11 @@ export class CardMainComponent {
   @Output() showFormOnMainCard = new EventEmitter<boolean>();
 
   showForm() {
-    console.log(this.isFormVisible)
-    this.showFormOnMainCard.emit();
+    console.log(window.innerWidth)
+    if(!(window.innerWidth < 768)) {
+      console.log('TESTE TESTE TESTE')
+      this.showFormOnMainCard.emit();
+    }
   }
 
   sendEmail() {

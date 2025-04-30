@@ -36,6 +36,14 @@
     }
   }
 
+  .card-content {
+    .progress-content {
+      span {
+        font-size: 40px;
+      }
+    }
+  }
+
   .card-action {
     display: flex;
     justify-content: flex-end;
