@@ -19,7 +19,7 @@ const Navbar = () => {
                   href="#"
                   className="block rounded-xl px-3 py-2 font-semibold text-white/90 transition-colors duration-200 hover:bg-primary/20 hover:text-primary"
                 >
-                  {item}
+                  {/* {item} */}
                 </a>
               </li>
             ))}
