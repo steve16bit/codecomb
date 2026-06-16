@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center gap-4 md:gap-8">
           <a className="flex shrink-0 items-center gap-2">
             <img src={codecombLogo} alt="CodeComb" className="h-8 w-auto md:h-10" />
-            <span className="text-xs font-normal tracking-tight text-primary md:text-2xl">Code Comb</span>
+            {/* <span className="text-xs font-normal tracking-tight text-primary md:text-2xl">Code Comb</span> */}
           </a>
 
           <ul className="flex align-center gap-2">
