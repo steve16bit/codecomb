@@ -1,0 +1,16 @@
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.hero-text h1 {
+  font-size: 1.5rem;
+  line-height: 0.8;
+  font-weight: 900;
+}
+
+.hero-model {
+  /* width: 500px;
+  height: 500px; */
+}
