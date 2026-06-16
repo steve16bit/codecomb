@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="w-full rounded-3xl border border-primary/30 px-3 py-2 text-white shadow-[0_12px_40px_rgba(43,43,43,0.35),inset_0_0_110px_rgba(255,212,0,0.06)] backdrop-blur-xl backdrop-saturate-150 md:px-6">
         <div className="flex justify-between items-center gap-4 md:gap-8">
           <a className="flex shrink-0 items-center gap-2">
-            <img src={codecombLogo} alt="CodeComb" className="h-8 w-auto md:h-10" />
+            {/* <img src={codecombLogo} alt="CodeComb" className="h-8 w-auto md:h-10" /> */}
             {/* <span className="text-xs font-normal tracking-tight text-primary md:text-2xl">Code Comb</span> */}
           </a>
 
