@@ -4,7 +4,7 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col xl:flex-row items-center px-6 md:px-16 xl:px-32 gap-6 xl:gap-10">
+    <div className="flex flex-col text-white xl:flex-row items-center px-6 md:px-16 xl:px-32 gap-6 xl:gap-10">
       <div className="w-full xl:w-1/2">
         <div className="flex items-center gap-2 my-8 xl:my-10">
           <div className="w-2 h-6 rounded-sm bg-primary"></div>
@@ -25,10 +25,10 @@ const Hero = () => {
           complex challenges into elegant, high-performance applications that
           accelerate your growth.
         </p>
-        <a className="mr-3 inline-flex cursor-pointer items-center justify-center rounded-2xl bg-primary px-4 py-2 text-sm font-semibold text-black transition-all hover:bg-secondary md:px-5 md:py-2.5 md:text-base lg:px-7 lg:py-3.5 lg:text-lg">
+        <a className="mr-3 inline-flex cursor-pointer items-center justify-center rounded-2xl bg-primary px-4 py-2 text-sm font-semibold text-primary transition-all hover:bg-secondary md:px-5 md:py-2.5 md:text-base lg:px-7 lg:py-3.5 lg:text-lg">
           Start your project
         </a>
-        <a className="inline-flex cursor-pointer items-center justify-center rounded-2xl border-2 border-primary px-4 py-2 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-black md:px-5 md:py-2.5 md:text-base lg:px-7 lg:py-3.5 lg:text-lg">
+        <a className="inline-flex cursor-pointer items-center justify-center rounded-2xl border-2 border-primary px-4 py-2 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-primary md:px-5 md:py-2.5 md:text-base lg:px-7 lg:py-3.5 lg:text-lg">
           View our work
         </a>
       </div>
